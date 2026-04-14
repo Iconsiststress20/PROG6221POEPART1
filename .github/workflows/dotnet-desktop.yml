@@ -18,7 +18,7 @@ jobs:
         dotnet-version: '8.0.x'   # use latest
 
     - name: Restore
-      run: dotnet restore
+      run: dotnet restore ./ChatbotApp/ChatbotApp/ChatbotApp.csproj
 
     - name: Build
-      run: dotnet build ./ChatbotApp/ChatbotApp/ChatbotApp.csproj --configuration Release
+      run: dotnet build ./ChatbotApp/ChatbotApp/ChatbotApp.csproj --configuration Release --verbosity detailed
