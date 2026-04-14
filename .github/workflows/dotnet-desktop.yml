@@ -1,4 +1,4 @@
-name: Build Project
+name: .NET Build
 
 on:
   push:
@@ -12,14 +12,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1.1
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'   # use latest
 
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1
+    - name: Restore
+      run: dotnet restore
 
-    - name: Restore packages
-      run: nuget restore
-
-    - name: Build solution
-      run: msbuild /p:Configuration=Release
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
