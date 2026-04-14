@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4FVV2Q3N18A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\casey\\OneDrive\\Desktop\\PROG6221POEPART1\\ChatbotApp\\ChatbotApp\\ChatbotApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\casey\\.nuget\\packages\\system.windows.extensions\\10.0.5\\system.windows.extensions.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
