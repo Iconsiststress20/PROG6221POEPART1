@@ -21,4 +21,4 @@ jobs:
       run: dotnet restore
 
     - name: Build
-      run: dotnet build --configuration Release --verbosity normal
+      run: dotnet build ./ChatbotApp/ChatbotApp/ChatbotApp.csproj --configuration Release
