@@ -25,7 +25,7 @@ The chatbot responds to user input based on keywords. If the user types **"help"
 
 The program runs continuously until the user types **"exit"**.
 
-## 🔐 Topics Covered
+##  Topics Covered
 
 * Password safety
 * Phishing awareness
